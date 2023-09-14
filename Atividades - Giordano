@@ -1,0 +1,216 @@
+1 - #include <stdio.h>
+
+int main() {
+    
+    int num;
+    
+    printf("Digite um número: ");
+    scanf("%d", &num);
+    
+    if (num > 0)
+        printf("O número é positivo.");
+    else if (num < 0)
+        printf("O número é negativo.");
+    else
+    printf("O número é zero.");
+    
+    return 0;
+}
+
+
+
+2 - #include <stdio.h>
+
+int main() {
+    
+    float peso, altura, imc;
+    
+    printf("Digite seu peso: ");
+    scanf("%f", &peso);
+    
+    printf("Digite sua altura em metros: ");
+    scanf("%f", &altura);
+    
+    imc = peso / (altura * altura);
+    
+    if (imc < 18.5){
+        printf("Você está abaixo do peso.");
+    }else if (imc >= 18.5 && imc <= 24.9){
+        printf("Seu peso está normal.");
+    }else if (imc >= 25 && imc <= 29.9){
+        printf("Você está com sobrepeso.");
+    } else if (imc >= 30 && imc <= 34.9){
+        printf("Você está com Obesidade de primeiro grau.");
+    }else if (imc >= 35 && imc <= 39.9){
+        printf("Você está com Obesidade de segundo grau.");
+    }else if (imc >= 40){
+        printf("Você está com obesidade de terceiro grau.");
+    }else
+        printf("Valor inválido.");
+    
+    return 0;
+}
+
+
+
+3 - #include <stdio.h>
+
+int main() {
+    
+    int n1, n2, n3;
+    
+    printf("Digite um número: ");
+    scanf("%d", &n1);
+    
+    printf("Digite mais um número: ");
+    scanf("%d", &n2);
+    
+    printf("Digite outro número: ");
+    scanf("%d", &n3);
+   
+    
+    if (n1 > n2 && n1 > n3){
+        printf("O maior número é: %d", n1);
+        printf(" e o menor é: %d", n3);
+    }else if (n1> n3 && n1 > n2){
+        printf("O maior número é: %d", n1);
+        printf(" e o menor é: %d", n2);
+    }else if (n2> n3 && n2 > n1){
+        printf("O maior número é: %d", n2);
+        printf(" e o menor é: %d", n1);
+    }else if (n2> n1 && n2> n3){
+        printf("O maior número é: %d", n2);
+        printf(" e o menor é: %d", n3);
+    }else if (n3> n1 && n3 > n2){
+        printf("O maior número é: %d", n3);
+        printf(" e o menor é: %d", n2);
+    }else if (n3> n2 && n3 > n1){
+        printf("O maior número é: %d", n3);
+        printf(" e o menor é: %d", n1);
+    }else {
+        printf("Valor inválido.");
+    }
+    return 0;
+}
+
+
+4 - #include <stdio.h>
+
+int main() {
+    
+    int num;
+    
+    printf("Digite um número: ");
+    scanf("%d", &num);
+    
+    if (num == 1){
+        printf("Domingo");
+    }else if (num == 2){
+        printf("Segunda");
+    }else if (num == 3){
+        printf("Terça");
+    }else if (num == 4){
+        printf("Quarta");
+    }else if (num == 5){
+        printf("Quinta");
+    }else if (num == 6){
+        printf("Sexta");
+    }else if (num == 7){
+        printf("Sábado");
+    }else {
+        printf("Valor inválido.");
+    }
+    return 0;
+}
+
+
+
+5 - #include <stdio.h>
+
+int main() {
+    
+    int num;
+    
+    printf("Digite um número: ");
+    scanf("%d", &num);
+    
+    if (num == 1){
+        printf("Janeiro");
+    }else if (num == 2){
+        printf("Fevereiro");
+    }else if (num == 3){
+        printf("Março");
+    }else if (num == 4){
+        printf("Abril");
+    }else if (num == 5){
+        printf("Maio");
+    }else if (num == 6){
+        printf("Junho");
+    }else if (num == 7){
+        printf("Julho");
+    }else if (num == 8){
+        printf("Agosto");
+    }else if (num == 9){
+        printf("Setembro");
+    }else if (num == 10){
+        printf("Outubro");
+    }else if (num == 11){
+        printf("Novembro");
+    }else if (num == 12){
+        printf("Dezembro");
+    }else {
+        printf("Valor inválido.");
+    }
+    return 0;
+}
+
+
+
+6 - #include <stdio.h>
+
+int main() {
+    
+    char letra;
+    
+    printf("Digite uma letra: ");
+    scanf("%c", &letra);
+    
+    if (letra == 'a'){
+        printf("É vogal.");
+    }else if (letra == 'e'){
+        printf("É vogal.");
+    }else if (letra == 'i'){
+        printf("É vogal.");
+    }else if (letra == 'o'){
+        printf("É vogal.");
+    }else if (letra == 'u'){
+        printf("É vogal.");
+    }else {
+        printf("Não é vogal.");
+    }
+    return 0;
+}
+
+
+
+
+7 - #include <stdio.h>
+
+int main() {
+    
+    int idade;
+    
+    printf("Digite sua idade: ");
+    scanf("%d", &idade);
+    
+    if (idade < 18){
+        printf("Menor de idade.");
+    }else if (idade >= 18 && idade < 65){
+        printf("Adulto.");
+    }else if (idade >= 65){
+        printf("Idoso.");
+    }else {
+        printf("Não é vogal.");
+    }
+    return 0;
+}
